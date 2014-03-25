@@ -32,14 +32,14 @@ The Helpers do the heavy lifting for the DataLoaders by processing and calculati
 Spring -> Java -> Morphia -> MongoDB
 
 ###Execution
-Step 1:  Go to yahoo download quote history
-Step 2:  Calculate Historical Volatility of stock
-Step 3:  Calculate Statistics
-Step 4:  Calculate short strike prices
-Step 5:  Calculate options price (Using Black Scholes Algorithm I wrote)
-Step 6:  Calculate P & L for weekly strategy
-Step 7:  Repeat for every week since Jan 1 2000
-Step 8:  Evaluate results.
+    Step 1:  Go to yahoo download quote history
+    Step 2:  Calculate Historical Volatility of stock
+    Step 3:  Calculate Statistics
+    Step 4:  Calculate short strike prices
+    Step 5:  Calculate options price (Using Black Scholes Algorithm I wrote)
+    Step 6:  Calculate P & L for weekly strategy
+    Step 7:  Repeat for every week since Jan 1 2000
+    Step 8:  Evaluate results.
 
 
 
