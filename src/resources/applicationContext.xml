@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="base" class="code.com.corybill.PrepareBase" abstract="true" />
+
+    <!-- Prepare Classes -->
+    <bean id="singleQuote" class="code.com.corybill.PrepareSingleQuote" scope="prototype" parent="base">
+        <property name="dataLoad" ref="singleQuoteBean" />
+    </bean>
+    <bean id="ironCondors" class="code.com.corybill.PrepareIronCondors" scope="prototype" parent="base">
+        <property name="dataLoad" ref="ironCondorBean" />
+    </bean>
+    <bean id="ironCondorRanges" class="code.com.corybill.PrepareIronCondorRanges" scope="prototype" parent="base">
+        <property name="dataLoad" ref="ironCondorRangesBean" />
+    </bean>
+    <bean id="currentWeekICs" class="code.com.corybill.PrepareCurrentIC" scope="prototype" parent="base">
+        <property name="dataLoad" ref="currentWeekICBean" />
+    </bean>
+    <bean id="currentCreditRanking" class="code.com.corybill.PrepareCurrentICCreditRanking" parent="base" scope="prototype">
+        <property name="dataLoad" ref="currentCreditDataLoad" />
+    </bean>
+    <bean id="currentWeekRangesICs" class="code.com.corybill.PrepareCurrentRangesIC" scope="prototype" parent="base">
+        <property name="dataLoad" ref="currentWeekRangesICBean" />
+    </bean>
+    <bean id="currentRangesCreditRanking" class="code.com.corybill.PrepareCurrentRangesICCreditRanking" parent="base" scope="prototype">
+        <property name="dataLoad" ref="currentRangesCreditDataLoad" />
+    </bean>
+    <bean id="vanillaOptions" class="code.com.corybill.PrepareVanillaOptions" parent="base" scope="prototype">
+        <property name="dataLoad" ref="vanillaBean" />
+    </bean>
+    <bean id="quoteVolatility" class="code.com.corybill.PrepareQuoteVolatility" parent="base" scope="prototype">
+        <property name="dataLoad" ref="volatilityBean" />
+    </bean>
+    <bean id="quoteVolRanking" class="code.com.corybill.PrepareQuoteVolRanking" parent="base" scope="prototype">
+        <property name="dataLoad" ref="volRankingBean" />
+    </bean>
+    <bean id="icRanking" class="code.com.corybill.PrepareICRanking" parent="base" scope="prototype">
+        <property name="dataLoad" ref="icRankingBean" />
+    </bean>
+    <bean id="icRangesRanking" class="code.com.corybill.PrepareICRangesRanking" parent="base" scope="prototype">
+        <property name="dataLoad" ref="icRangesRankingBean" />
+    </bean>
+    <bean id="icStudies" class="code.com.corybill.PrepareICStudies" parent="base" scope="prototype">
+        <property name="dataLoad" ref="studyBean" />
+    </bean>
+    <bean id="icRangesStudies" class="code.com.corybill.PrepareICRangesStudies" parent="base" scope="prototype">
+        <property name="dataLoad" ref="rangesStudyBean" />
+    </bean>
+    <bean id="icTopTenStudy" class="code.com.corybill.PrepareICTopTenStudy" parent="base" scope="prototype">
+        <property name="dataLoad" ref="topTenStudyBean" />
+    </bean>
+    <bean id="icTopFiveStudy" class="code.com.corybill.PrepareICTopFiveStudy" parent="base" scope="prototype">
+        <property name="dataLoad" ref="topFiveStudyBean" />
+    </bean>
+    <bean id="icCorrealtionStudy" class="code.com.corybill.PrepareICCorrelationStudy" parent="base" scope="prototype">
+        <property name="dataLoad" ref="correlationStudyBean" />
+    </bean>
+    <bean id="currentOptions" class="code.com.corybill.PrepareCurrentOptions" parent="base" scope="prototype">
+        <property name="dataLoad" ref="currentOptionsBean" />
+    </bean>
+
+    <!-- DATA LOAD -->
+    <bean id="cboeBean" class="code.com.corybill.control.dataLoad.CBOEDataLoad" />
+    <bean id="currentCreditDataLoad" class="code.com.corybill.control.dataLoad.CurrentICCreditRankingDataLoad" scope="prototype">
+        <property name="dlHelper" ref="currentCreditHelperBean" />
+        <property name="icCurrentDao" ref="icCurrentDaoBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="currentRangesCreditDataLoad" class="code.com.corybill.control.dataLoad.CurrentICRangesCreditRankingDataLoad" scope="prototype">
+        <property name="dlHelper" ref="currentRangesCreditHelperBean" />
+        <property name="icCurrentRangesDao" ref="icCurrentRangesDaoBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="studyBean" class="code.com.corybill.control.dataLoad.ICStudiesDataLoad" scope="prototype">
+        <property name="ironCondorDao" ref="ironCondorDaoBean" />
+        <property name="pnlHelper" ref="profitLossStudyHelperBean" />
+        <property name="correlationHelper" ref="icCorrelationStudyHelperBean" />
+        <property name="topTenHelper" ref="icTopTenStudyHelperBean" />
+        <property name="topFiveHelper" ref="icTopFiveStudyHelperBean" />
+    </bean>
+    <bean id="rangesStudyBean" class="code.com.corybill.control.dataLoad.ICRangesStudiesDataLoad" scope="prototype">
+        <property name="ironCondorDao" ref="ironCondorRangesDaoBean" />
+        <property name="topTenHelper" ref="icRangesTopTenStudyHelperBean" />
+        <property name="topFiveHelper" ref="icRangesTopFiveStudyHelperBean" />
+    </bean>
+    <bean id="topTenStudyBean" class="code.com.corybill.control.dataLoad.ICTopTenStudyDataLoad" scope="prototype">
+        <property name="dlHelper" ref="icTopTenStudyHelperBean" />
+        <property name="ironCondorDao" ref="ironCondorDaoBean" />
+    </bean>
+    <bean id="topFiveStudyBean" class="code.com.corybill.control.dataLoad.ICTopFiveStudyDataLoad" scope="prototype">
+        <property name="dlHelper" ref="icTopFiveStudyHelperBean" />
+        <property name="ironCondorDao" ref="ironCondorDaoBean" />
+    </bean>
+    <bean id="correlationStudyBean" class="code.com.corybill.control.dataLoad.ICCorrelationStudyDataLoad" scope="prototype">
+        <property name="dlHelper" ref="icCorrelationStudyHelperBean" />
+        <property name="ironCondorDao" ref="ironCondorDaoBean" />
+    </bean>
+    <bean id="icRankingBean" class="code.com.corybill.control.dataLoad.ICRankingDataLoad" scope="prototype">
+        <property name="pnlRankingHelper" ref="profitLossHelperBean" />
+        <property name="creditRankingHelper" ref="creditHelperBean" />
+        <property name="ironCondorDao" ref="ironCondorDaoBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="icRangesRankingBean" class="code.com.corybill.control.dataLoad.ICRangesRankingDataLoad" scope="prototype">
+        <property name="pnlRankingHelper" ref="rangesProfitLossHelperBean" />
+        <property name="creditRankingHelper" ref="rangesCreditHelperBean" />
+        <property name="ironCondorDao" ref="ironCondorRangesDaoBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="ironCondorBean" class="code.com.corybill.control.dataLoad.IronCondorDataLoad" scope="prototype">
+        <property name="dlHelper" ref="condorHelperBean" />
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+        <property name="ironCondorDao" ref="ironCondorDaoBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+    </bean>
+    <bean id="ironCondorRangesBean" class="code.com.corybill.control.dataLoad.IronCondorRangesDataLoad" scope="prototype">
+        <property name="dlHelper" ref="condorRangesHelperBean" />
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+        <property name="ironCondorDao" ref="ironCondorRangesDaoBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+    </bean>
+    <bean id="currentWeekICBean" class="code.com.corybill.control.dataLoad.CurrentICDataLoad" scope="prototype">
+        <property name="dlHelper" ref="currentWeekICHelperBean" />
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+        <property name="icCurrentDao" ref="icCurrentDaoBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+    </bean>
+    <bean id="currentWeekRangesICBean" class="code.com.corybill.control.dataLoad.CurrentICRangesDataLoad" scope="prototype">
+        <property name="dlHelper" ref="currentWeekICRangesHelperBean" />
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+        <property name="icCurrentRangesDao" ref="icCurrentRangesDaoBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+    </bean>
+    <bean id="volatilityBean" class="code.com.corybill.control.dataLoad.QuoteVolatilityDataLoad" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+    </bean>
+    <bean id="volRankingBean" class="code.com.corybill.control.dataLoad.QuoteVolRankingDataLoad" scope="prototype">
+        <property name="dlHelper" ref="volRankingHelperBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+    </bean>
+    <bean id="singleQuoteBean" class="code.com.corybill.control.dataLoad.SingleQuoteDataLoad" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="dlHelper" ref="singleQuoteHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+    </bean>
+    <bean id="vanillaBean" class="code.com.corybill.control.dataLoad.VanillaOptionsDataLoad" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="vanillaOptionsDao" ref="vanillaOptionsDaoBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+        <property name="dlHelper" ref="optionsHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="currentOptionsBean" class="code.com.corybill.control.dataLoad.CurrentOptionsDataLoad" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="dlHelper" ref="currentOptionsHelperBean" />
+        <property name="quoteDao" ref="quoteDaoBean" />
+    </bean>
+
+    <!-- Helper Classes -->
+    <bean id="optionsHelperBean" class="code.com.corybill.helper.OptionsHelper" scope="prototype">
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="condorHelperBean" class="code.com.corybill.helper.IronCondorHelper" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="condorRangesHelperBean" class="code.com.corybill.helper.IronCondorRangesHelper" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="currentWeekICHelperBean" class="code.com.corybill.helper.CurrentICHelper" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="currentWeekICRangesHelperBean" class="code.com.corybill.helper.CurrentICRangesHelper" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="icRangesTopTenStudyHelperBean" class="code.com.corybill.helper.ICRangesTopTenStudyHelper" scope="prototype" />
+    <bean id="icTopTenStudyHelperBean" class="code.com.corybill.helper.ICTopTenStudyHelper" scope="prototype" />
+    <bean id="singleQuoteHelperBean" class="code.com.corybill.helper.SingleQuoteHelper" />
+    <bean id="icRangesTopFiveStudyHelperBean" class="code.com.corybill.helper.ICRangesTopFiveStudyHelper" scope="prototype" />
+    <bean id="icTopFiveStudyHelperBean" class="code.com.corybill.helper.ICTopFiveStudyHelper" scope="prototype" />
+    <bean id="icCorrelationStudyHelperBean" class="code.com.corybill.helper.ICCorrelationStudyHelper" scope="prototype" />
+    <bean id="profitLossHelperBean" class="code.com.corybill.helper.ICProfitAndLossRankingHelper" scope="prototype">
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="rangesProfitLossHelperBean" class="code.com.corybill.helper.ICRangesProfitAndLossRankingHelper" scope="prototype">
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+    <bean id="rangesCreditHelperBean" class="code.com.corybill.helper.ICRangesCreditRankingHelper" scope="prototype" />
+    <bean id="profitLossStudyHelperBean" class="code.com.corybill.helper.ICProfitLossStudyHelper" scope="prototype" />
+    <bean id="creditHelperBean" class="code.com.corybill.helper.ICCreditRankingHelper" scope="prototype" />
+    <bean id="currentCreditHelperBean" class="code.com.corybill.helper.ICCurrentCreditRankingHelper" scope="prototype" />
+    <bean id="currentRangesCreditHelperBean" class="code.com.corybill.helper.ICCurrentRangesCreditRankingHelper" scope="prototype" />
+    <bean id="volRankingHelperBean" class="code.com.corybill.helper.VolRankingHelper" scope="prototype" />
+    <bean id="currentOptionsHelperBean" class="code.com.corybill.helper.CurrentOptionsHelper" scope="prototype">
+        <property name="mathUtil" ref="mathUtilBean" />
+    </bean>
+
+    <bean id="calendarHelperBean" class="code.com.corybill.helper.CalendarHelper" scope="prototype" />
+    <bean id="myStandardDeviationBean" class="code.com.corybill.control.math.MyStandardDeviation" scope="prototype" />
+    <bean id="mathUtilBean" class="code.com.corybill.control.math.MathUtil" scope="prototype">
+        <property name="myStandardDeviation" ref="myStandardDeviationBean" />
+    </bean>
+
+    <!--  DAOs  -->
+    <bean id="updateDateDaoBean" class="code.com.corybill.control.mongoDao.UpdateDateDao" />
+    <bean id="vanillaOptionsDaoBean" class="code.com.corybill.control.mongoDao.VanillaOptionsDao" scope="prototype" />
+    <bean id="ironCondorDaoBean" class="code.com.corybill.control.mongoDao.IronCondorDao" scope="prototype" />
+    <bean id="ironCondorRangesDaoBean" class="code.com.corybill.control.mongoDao.IronCondorRangesDao" scope="prototype" />
+    <bean id="icCurrentDaoBean" class="code.com.corybill.control.mongoDao.IronCondorCurrentDao" scope="prototype" />
+    <bean id="icCurrentRangesDaoBean" class="code.com.corybill.control.mongoDao.IronCondorCurrentRangesDao" scope="prototype" />
+    <bean id="quoteDaoBean" class="code.com.corybill.control.mongoDao.QuoteDao" scope="prototype">
+        <property name="calendarHelper" ref="calendarHelperBean" />
+    </bean>
+    <bean id="expirationsDaoBean" class="code.com.corybill.control.mongoDao.ExpirationsDao" />
+    <bean id="marketDatesDaoBean" class="code.com.corybill.control.mongoDao.MarketDatesDao" />
+
+</beans>

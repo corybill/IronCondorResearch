@@ -1,0 +1,548 @@
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+May 20, 2013 9:40:51 PM com.google.code.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to com.google.code.morphia.logging.jdk.JDKLoggerFactory
+2013-05-20 21:40:51,392 [main] INFO   PrepareEntireHistory - Logging initialized.
+log4j:ERROR Could not find value for key log4j.appender.ResearchA
+log4j:ERROR Could not instantiate appender named "ResearchA".
+log4j:ERROR Could not find value for key log4j.appender.ResearchA
+log4j:ERROR Could not instantiate appender named "ResearchA".
+2013-05-20 21:40:51,401 [pool-1-thread-1] DEBUG  StandardEnvironment - Initializing new StandardEnvironment
+2013-05-20 21:40:51,401 [pool-1-thread-1] DEBUG  StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2013-05-20 21:40:51,401 [pool-1-thread-1] DEBUG  StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-05-20 21:40:51,401 [pool-1-thread-1] DEBUG  StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-05-20 21:40:51,402 [pool-1-thread-1] INFO   ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5232285b: startup date [Mon May 20 21:40:51 EDT 2013]; root of context hierarchy
+2013-05-20 21:40:51,403 [pool-1-thread-1] DEBUG  StandardEnvironment - Initializing new StandardEnvironment
+2013-05-20 21:40:51,403 [pool-1-thread-1] DEBUG  StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2013-05-20 21:40:51,403 [pool-1-thread-1] DEBUG  StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-05-20 21:40:51,403 [pool-1-thread-1] DEBUG  StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-05-20 21:40:51,404 [pool-1-thread-1] DEBUG  StandardEnvironment - Initializing new StandardEnvironment
+2013-05-20 21:40:51,404 [pool-1-thread-1] DEBUG  StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2013-05-20 21:40:51,404 [pool-1-thread-1] DEBUG  StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-05-20 21:40:51,404 [pool-1-thread-1] DEBUG  StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-05-20 21:40:51,405 [pool-1-thread-1] INFO   XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [resources/applicationContext.xml]
+2013-05-20 21:40:51,407 [pool-1-thread-1] DEBUG  DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2013-05-20 21:40:51,409 [pool-1-thread-1] TRACE  PluggableSchemaResolver - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans.xsd]
+2013-05-20 21:40:51,409 [pool-1-thread-1] DEBUG  PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
+2013-05-20 21:40:51,414 [pool-1-thread-1] DEBUG  PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/jms/spring-jms-3.0.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms-3.1.xsd=org/springframework/jms/config/spring-jms-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2013-05-20 21:40:51,419 [pool-1-thread-1] DEBUG  PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.1.xsd
+2013-05-20 21:40:51,496 [pool-1-thread-1] DEBUG  DefaultBeanDefinitionDocumentReader - Loading bean definitions
+2013-05-20 21:40:51,531 [pool-1-thread-1] DEBUG  XmlBeanDefinitionReader - Loaded 70 bean definitions from location pattern [resources/applicationContext.xml]
+2013-05-20 21:40:51,531 [pool-1-thread-1] DEBUG  ClassPathXmlApplicationContext - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@5232285b: org.springframework.beans.factory.support.DefaultListableBeanFactory@62fe437f: defining beans [base,singleQuote,ironCondors,ironCondorRanges,currentWeekICs,currentCreditRanking,currentWeekRangesICs,currentRangesCreditRanking,vanillaOptions,quoteVolatility,quoteVolRanking,icRanking,icRangesRanking,icStudies,icRangesStudies,icTopTenStudy,icTopFiveStudy,icCorrealtionStudy,currentOptions,cboeBean,currentCreditDataLoad,currentRangesCreditDataLoad,studyBean,rangesStudyBean,topTenStudyBean,topFiveStudyBean,correlationStudyBean,icRankingBean,icRangesRankingBean,ironCondorBean,ironCondorRangesBean,currentWeekICBean,currentWeekRangesICBean,volatilityBean,volRankingBean,singleQuoteBean,vanillaBean,currentOptionsBean,optionsHelperBean,condorHelperBean,condorRangesHelperBean,currentWeekICHelperBean,currentWeekICRangesHelperBean,icRangesTopTenStudyHelperBean,icTopTenStudyHelperBean,singleQuoteHelperBean,icRangesTopFiveStudyHelperBean,icTopFiveStudyHelperBean,icCorrelationStudyHelperBean,profitLossHelperBean,rangesProfitLossHelperBean,rangesCreditHelperBean,profitLossStudyHelperBean,creditHelperBean,currentCreditHelperBean,currentRangesCreditHelperBean,volRankingHelperBean,currentOptionsHelperBean,calendarHelperBean,myStandardDeviationBean,mathUtilBean,updateDateDaoBean,vanillaOptionsDaoBean,ironCondorDaoBean,ironCondorRangesDaoBean,icCurrentDaoBean,icCurrentRangesDaoBean,quoteDaoBean,expirationsDaoBean,marketDatesDaoBean]; root of factory hierarchy
+2013-05-20 21:40:51,555 [pool-1-thread-1] DEBUG  ClassPathXmlApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@35d7c7ad]
+2013-05-20 21:40:51,555 [pool-1-thread-1] DEBUG  ClassPathXmlApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@69764a78]
+2013-05-20 21:40:51,562 [pool-1-thread-1] INFO   DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@62fe437f: defining beans [base,singleQuote,ironCondors,ironCondorRanges,currentWeekICs,currentCreditRanking,currentWeekRangesICs,currentRangesCreditRanking,vanillaOptions,quoteVolatility,quoteVolRanking,icRanking,icRangesRanking,icStudies,icRangesStudies,icTopTenStudy,icTopFiveStudy,icCorrealtionStudy,currentOptions,cboeBean,currentCreditDataLoad,currentRangesCreditDataLoad,studyBean,rangesStudyBean,topTenStudyBean,topFiveStudyBean,correlationStudyBean,icRankingBean,icRangesRankingBean,ironCondorBean,ironCondorRangesBean,currentWeekICBean,currentWeekRangesICBean,volatilityBean,volRankingBean,singleQuoteBean,vanillaBean,currentOptionsBean,optionsHelperBean,condorHelperBean,condorRangesHelperBean,currentWeekICHelperBean,currentWeekICRangesHelperBean,icRangesTopTenStudyHelperBean,icTopTenStudyHelperBean,singleQuoteHelperBean,icRangesTopFiveStudyHelperBean,icTopFiveStudyHelperBean,icCorrelationStudyHelperBean,profitLossHelperBean,rangesProfitLossHelperBean,rangesCreditHelperBean,profitLossStudyHelperBean,creditHelperBean,currentCreditHelperBean,currentRangesCreditHelperBean,volRankingHelperBean,currentOptionsHelperBean,calendarHelperBean,myStandardDeviationBean,mathUtilBean,updateDateDaoBean,vanillaOptionsDaoBean,ironCondorDaoBean,ironCondorRangesDaoBean,icCurrentDaoBean,icCurrentRangesDaoBean,quoteDaoBean,expirationsDaoBean,marketDatesDaoBean]; root of factory hierarchy
+2013-05-20 21:40:51,563 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating shared instance of singleton bean 'cboeBean'
+2013-05-20 21:40:51,563 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'cboeBean'
+2013-05-20 21:40:51,563 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Eagerly caching bean 'cboeBean' to allow for resolving potential circular references
+2013-05-20 21:40:51,563 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'cboeBean'
+2013-05-20 21:40:51,565 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating shared instance of singleton bean 'singleQuoteHelperBean'
+2013-05-20 21:40:51,565 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'singleQuoteHelperBean'
+2013-05-20 21:40:51,565 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Eagerly caching bean 'singleQuoteHelperBean' to allow for resolving potential circular references
+2013-05-20 21:40:51,565 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'singleQuoteHelperBean'
+2013-05-20 21:40:51,565 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating shared instance of singleton bean 'updateDateDaoBean'
+2013-05-20 21:40:51,565 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'updateDateDaoBean'
+2013-05-20 21:40:51,565 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Eagerly caching bean 'updateDateDaoBean' to allow for resolving potential circular references
+2013-05-20 21:40:51,565 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'updateDateDaoBean'
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating shared instance of singleton bean 'expirationsDaoBean'
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'expirationsDaoBean'
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Eagerly caching bean 'expirationsDaoBean' to allow for resolving potential circular references
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'expirationsDaoBean'
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating shared instance of singleton bean 'marketDatesDaoBean'
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'marketDatesDaoBean'
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Eagerly caching bean 'marketDatesDaoBean' to allow for resolving potential circular references
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'marketDatesDaoBean'
+2013-05-20 21:40:51,566 [pool-1-thread-1] DEBUG  ClassPathXmlApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@5513425f]
+2013-05-20 21:40:51,567 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+2013-05-20 21:40:51,568 [pool-1-thread-1] TRACE  ClassPathXmlApplicationContext - Publishing event in org.springframework.context.support.ClassPathXmlApplicationContext@5232285b: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@5232285b: startup date [Mon May 20 21:40:51 EDT 2013]; root of context hierarchy]
+2013-05-20 21:40:51,568 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Returning cached instance of singleton bean 'cboeBean'
+2013-05-20 21:40:53,814 [pool-1-thread-1] DEBUG  CBOEDataLoad - LIST OF AVAILABLE WEEKLYS OPTIONS (updated 05-16-2013) - 0.0
+2013-05-20 21:40:53,814 [pool-1-thread-1] DEBUG  CBOEDataLoad - REMINDER:THE FOLLOWING CLASSES WILL BE ADDED TO THE WEEKLY PROGRAM: UA, DOW - 0.0
+2013-05-20 21:40:53,814 [pool-1-thread-1] DEBUG  CBOEDataLoad - NOTE:THE FOLLOWING CLASSES HAS A QUARTERLY EXPIRATION 06/28/13, THEREFORE WILL NOT GET EXPIRATION 06/14/13:GLD,IWM,QQQ & SPY - 0.0
+2013-05-20 21:40:53,814 [pool-1-thread-1] DEBUG  CBOEDataLoad - LIST OF AVAILABLE WEEKLY EXPIRATIONS IN COLUMNS E THRU J  - 0.0
+2013-05-20 21:40:53,814 [pool-1-thread-1] DEBUG  CBOEDataLoad - Ticker Symbol - 0.0
+2013-05-20 21:40:53,816 [pool-1-thread-1] DEBUG  CBOEDataLoad - OEX - 1.6666666666666667E-5
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - XEO - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - SPX* * - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - DJX - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - NDX - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - RUT - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - AGQ - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - DIA - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - EEM - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - EFA - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - EWJ - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - EWZ - 0.0
+2013-05-20 21:40:53,817 [pool-1-thread-1] DEBUG  CBOEDataLoad - FAS - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - FAZ - 1.6666666666666667E-5
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - FXE - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - FXI - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - GLD - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - GLD7 - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - GDX - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - IWM - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - QQQ - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - SDS - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - SLV - 0.0
+2013-05-20 21:40:53,818 [pool-1-thread-1] DEBUG  CBOEDataLoad - SPY - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - SPY7 - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - SSO - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - TBT - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - TLT - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - TNA - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - TZA - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - USO - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - UNG - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - VXX - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - XLB - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - XLE - 0.0
+2013-05-20 21:40:53,820 [pool-1-thread-1] DEBUG  CBOEDataLoad - XLF - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - XME - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - AA - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - AAPL - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - AAPL7 - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - ABX - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - ACN - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - AET - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - AIG - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - AMRN - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - AMZN - 0.0
+2013-05-20 21:40:53,822 [pool-1-thread-1] DEBUG  CBOEDataLoad - AMZN7 - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - ANF - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - ANR - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - APA - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - APC - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - APOL - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - ARNA - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - AXP - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - BA - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - BAC - 0.0
+2013-05-20 21:40:53,823 [pool-1-thread-1] DEBUG  CBOEDataLoad - BAX  - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - BBRY - 1.6666666666666667E-5
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - BBY - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - BIDU - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - BK - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - BMY - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - BP - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - C - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - CAT - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - CELG - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - CF - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - CHK - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - CL  - 0.0
+2013-05-20 21:40:53,824 [pool-1-thread-1] DEBUG  CBOEDataLoad - CLF - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - CMG - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - COF - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - COH - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - COP - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - COST - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - CSCO - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - CREE - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - CRM - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - CVX - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - DDD - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - DE - 0.0
+2013-05-20 21:40:53,825 [pool-1-thread-1] DEBUG  CBOEDataLoad - DECK - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - DELL - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - DIS - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - DNDN - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - DOW - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - EBAY - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - EMC - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - F - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - FB - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - FCX - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - FDX - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - FFIV - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - FMCN - 0.0
+2013-05-20 21:40:53,826 [pool-1-thread-1] DEBUG  CBOEDataLoad - FSLR - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GE - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GG - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GILD - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GM - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GMCR - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GME - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GOOG - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GOOG7 - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GPS - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GRPN - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - GS - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - HAL  - 0.0
+2013-05-20 21:40:53,827 [pool-1-thread-1] DEBUG  CBOEDataLoad - HD - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - HES - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - HLF - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - HON - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - HPQ - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - IBM - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - INTC - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - IOC - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - IP - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - ISRG - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - JCP - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - JNJ - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - JOY - 0.0
+2013-05-20 21:40:53,828 [pool-1-thread-1] DEBUG  CBOEDataLoad - JPM - 0.0
+2013-05-20 21:40:53,829 [pool-1-thread-1] DEBUG  CBOEDataLoad - KO - 0.0
+2013-05-20 21:40:53,829 [pool-1-thread-1] DEBUG  CBOEDataLoad - KORS - 0.0
+2013-05-20 21:40:53,829 [pool-1-thread-1] DEBUG  CBOEDataLoad - LLY - 0.0
+2013-05-20 21:40:53,829 [pool-1-thread-1] DEBUG  CBOEDataLoad - LNKD - 0.0
+2013-05-20 21:40:53,829 [pool-1-thread-1] DEBUG  CBOEDataLoad - LOW - 0.0
+2013-05-20 21:40:53,829 [pool-1-thread-1] DEBUG  CBOEDataLoad - LULU - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - LVS - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - M - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MA - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MCD - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MCO - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MCP - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MDLZ - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MET - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MGM - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MHP - 0.0
+2013-05-20 21:40:53,830 [pool-1-thread-1] DEBUG  CBOEDataLoad - MMM - 0.0
+2013-05-20 21:40:53,831 [pool-1-thread-1] DEBUG  CBOEDataLoad - MON - 0.0
+2013-05-20 21:40:53,831 [pool-1-thread-1] DEBUG  CBOEDataLoad - MOS - 0.0
+2013-05-20 21:40:53,831 [pool-1-thread-1] DEBUG  CBOEDataLoad - MPEL - 0.0
+2013-05-20 21:40:53,831 [pool-1-thread-1] DEBUG  CBOEDataLoad - MRK - 0.0
+2013-05-20 21:40:53,831 [pool-1-thread-1] DEBUG  CBOEDataLoad - MRVL - 0.0
+2013-05-20 21:40:53,831 [pool-1-thread-1] DEBUG  CBOEDataLoad - MS - 0.0
+2013-05-20 21:40:53,831 [pool-1-thread-1] DEBUG  CBOEDataLoad - MSFT - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - MU - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - NAV - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - NEM - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - NFLX - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - NKE - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - NOK - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - NTAP - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - NVDA - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - ORCL - 0.0
+2013-05-20 21:40:53,832 [pool-1-thread-1] DEBUG  CBOEDataLoad - OXY - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - PBR - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - PCLN - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - PFE - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - PG - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - PM  - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - POT - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - PSX - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - QCOM - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - QCOR - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - S - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - SBUX - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - SINA  - 0.0
+2013-05-20 21:40:53,833 [pool-1-thread-1] DEBUG  CBOEDataLoad - SLB - 0.0
+2013-05-20 21:40:53,834 [pool-1-thread-1] DEBUG  CBOEDataLoad - SLW - 1.6666666666666667E-5
+2013-05-20 21:40:53,834 [pool-1-thread-1] DEBUG  CBOEDataLoad - SNDK - 0.0
+2013-05-20 21:40:53,834 [pool-1-thread-1] DEBUG  CBOEDataLoad - STX - 0.0
+2013-05-20 21:40:53,834 [pool-1-thread-1] DEBUG  CBOEDataLoad - SU - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - T - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - TGT - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - TIF - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - TSLA - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - TSO - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - TXN - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - UA - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - UNH - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - UNP - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - UNXL - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - UPS - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - UTX - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - V - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - VALE - 0.0
+2013-05-20 21:40:53,835 [pool-1-thread-1] DEBUG  CBOEDataLoad - VHC - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - VLO - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - VMW - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - VOD - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - VZ - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - WAG - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - WFC - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - WFM - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - WLT - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - WMB - 0.0
+2013-05-20 21:40:53,836 [pool-1-thread-1] DEBUG  CBOEDataLoad - WMT - 0.0
+2013-05-20 21:40:53,837 [pool-1-thread-1] DEBUG  CBOEDataLoad - WYNN - 1.6666666666666667E-5
+2013-05-20 21:40:53,837 [pool-1-thread-1] DEBUG  CBOEDataLoad - X - 0.0
+2013-05-20 21:40:53,837 [pool-1-thread-1] DEBUG  CBOEDataLoad - XOM - 0.0
+2013-05-20 21:40:53,837 [pool-1-thread-1] DEBUG  CBOEDataLoad - YHOO - 0.0
+2013-05-20 21:40:53,837 [pool-1-thread-1] DEBUG  CBOEDataLoad - YUM - 0.0
+2013-05-20 21:40:53,837 [pool-1-thread-1] DEBUG  CBOEDataLoad - ZNGA - 0.0
+2013-05-20 21:40:53,837 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'currentWeekICs'
+2013-05-20 21:40:53,854 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'currentWeekICBean'
+2013-05-20 21:40:53,854 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'currentWeekICHelperBean'
+2013-05-20 21:40:53,855 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'calendarHelperBean'
+2013-05-20 21:40:53,856 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'calendarHelperBean'
+2013-05-20 21:40:53,860 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Getting BeanInfo for class [code.com.corybill.helper.CurrentICHelper]
+2013-05-20 21:40:53,869 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Caching PropertyDescriptors for class [code.com.corybill.helper.CurrentICHelper]
+2013-05-20 21:40:53,869 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'calendarHelper' of type [code.com.corybill.helper.CalendarHelper]
+2013-05-20 21:40:53,870 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'class' of type [java.lang.Class]
+2013-05-20 21:40:53,870 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'mathUtil' of type [code.com.corybill.control.math.MathUtil]
+2013-05-20 21:40:53,881 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'mathUtilBean'
+2013-05-20 21:40:53,882 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'myStandardDeviationBean'
+2013-05-20 21:40:53,882 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'myStandardDeviationBean'
+2013-05-20 21:40:53,882 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Getting BeanInfo for class [code.com.corybill.control.math.MathUtil]
+2013-05-20 21:40:53,891 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Caching PropertyDescriptors for class [code.com.corybill.control.math.MathUtil]
+2013-05-20 21:40:53,891 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'class' of type [java.lang.Class]
+2013-05-20 21:40:53,891 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'myStandardDeviation' of type [code.com.corybill.control.math.MyStandardDeviation]
+2013-05-20 21:40:53,891 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'time'
+2013-05-20 21:40:53,891 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'mathUtilBean'
+2013-05-20 21:40:53,892 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'currentWeekICHelperBean'
+2013-05-20 21:40:53,892 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Getting BeanInfo for class [code.com.corybill.control.dataLoad.CurrentICDataLoad]
+2013-05-20 21:40:53,896 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Caching PropertyDescriptors for class [code.com.corybill.control.dataLoad.CurrentICDataLoad]
+2013-05-20 21:40:53,896 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'calendarHelper' of type [code.com.corybill.helper.CalendarHelper]
+2013-05-20 21:40:53,896 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'class' of type [java.lang.Class]
+2013-05-20 21:40:53,896 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'dlHelper' of type [code.com.corybill.helper.CurrentICHelper]
+2013-05-20 21:40:53,896 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'icCurrentDao' of type [code.com.corybill.control.mongoDao.IronCondorCurrentDao]
+2013-05-20 21:40:53,896 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'listOfSymbols' of type [java.util.List]
+2013-05-20 21:40:53,896 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'mathUtil' of type [code.com.corybill.control.math.MathUtil]
+2013-05-20 21:40:53,897 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'quoteDao' of type [code.com.corybill.control.mongoDao.QuoteDao]
+2013-05-20 21:40:53,897 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'calendarHelperBean'
+2013-05-20 21:40:53,897 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'calendarHelperBean'
+2013-05-20 21:40:53,897 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'mathUtilBean'
+2013-05-20 21:40:53,897 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'myStandardDeviationBean'
+2013-05-20 21:40:53,897 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'myStandardDeviationBean'
+2013-05-20 21:40:53,897 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'mathUtilBean'
+2013-05-20 21:40:53,897 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'icCurrentDaoBean'
+2013-05-20 21:40:53,898 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'icCurrentDaoBean'
+2013-05-20 21:40:53,898 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'quoteDaoBean'
+2013-05-20 21:40:53,898 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'calendarHelperBean'
+2013-05-20 21:40:53,898 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'calendarHelperBean'
+2013-05-20 21:40:53,898 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Getting BeanInfo for class [code.com.corybill.control.mongoDao.QuoteDao]
+2013-05-20 21:40:53,902 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Caching PropertyDescriptors for class [code.com.corybill.control.mongoDao.QuoteDao]
+2013-05-20 21:40:53,902 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'calendarHelper' of type [code.com.corybill.helper.CalendarHelper]
+2013-05-20 21:40:53,902 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'class' of type [java.lang.Class]
+2013-05-20 21:40:53,902 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'quoteDaoBean'
+2013-05-20 21:40:53,903 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'currentWeekICBean'
+2013-05-20 21:40:53,903 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Getting BeanInfo for class [code.com.corybill.PrepareCurrentIC]
+2013-05-20 21:40:53,908 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Caching PropertyDescriptors for class [code.com.corybill.PrepareCurrentIC]
+2013-05-20 21:40:53,908 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'class' of type [java.lang.Class]
+2013-05-20 21:40:53,908 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'dataLoad' of type [code.com.corybill.control.dataLoad.CurrentICDataLoad]
+2013-05-20 21:40:53,908 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'instance' of type [code.com.corybill.PrepareBase]
+2013-05-20 21:40:53,909 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'currentWeekICs'
+2013-05-20 21:40:54,241 [pool-2-thread-1] DEBUG  CurrentICDataLoad - OEX: 0.005533333333333334
+2013-05-20 21:40:54,273 [pool-2-thread-1] DEBUG  CurrentICDataLoad - XEO: 5.333333333333334E-4
+2013-05-20 21:40:54,311 [pool-2-thread-1] DEBUG  CurrentICDataLoad - NDX: 6.333333333333333E-4
+2013-05-20 21:40:54,354 [pool-2-thread-1] DEBUG  CurrentICDataLoad - RUT: 7.166666666666667E-4
+2013-05-20 21:40:54,375 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AGQ: 3.5E-4
+2013-05-20 21:40:54,400 [pool-2-thread-1] DEBUG  CurrentICDataLoad - DIA: 4.166666666666667E-4
+2013-05-20 21:40:54,420 [pool-2-thread-1] DEBUG  CurrentICDataLoad - EEM: 3.333333333333333E-4
+2013-05-20 21:40:54,438 [pool-2-thread-1] DEBUG  CurrentICDataLoad - EFA: 2.8333333333333335E-4
+2013-05-20 21:40:54,457 [pool-2-thread-1] DEBUG  CurrentICDataLoad - EWJ: 3.1666666666666665E-4
+2013-05-20 21:40:54,478 [pool-2-thread-1] DEBUG  CurrentICDataLoad - EWZ: 3.5E-4
+2013-05-20 21:40:54,505 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FAS: 4.5E-4
+2013-05-20 21:40:54,528 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FAZ: 3.8333333333333334E-4
+2013-05-20 21:40:54,551 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FXE: 3.6666666666666667E-4
+2013-05-20 21:40:54,568 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FXI: 2.8333333333333335E-4
+2013-05-20 21:40:54,586 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GLD: 3.0E-4
+2013-05-20 21:40:54,588 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GLD7: 3.3333333333333335E-5
+2013-05-20 21:40:54,605 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GDX: 2.666666666666667E-4
+2013-05-20 21:40:54,623 [pool-2-thread-1] DEBUG  CurrentICDataLoad - IWM: 3.0E-4
+2013-05-20 21:40:54,689 [pool-2-thread-1] DEBUG  CurrentICDataLoad - QQQ: 0.0011
+2013-05-20 21:40:54,792 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SDS: 0.0017166666666666667
+2013-05-20 21:40:54,807 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SLV: 2.5E-4
+2013-05-20 21:40:54,842 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SPY: 5.5E-4
+2013-05-20 21:40:54,844 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SPY7: 3.3333333333333335E-5
+2013-05-20 21:40:54,859 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SSO: 2.3333333333333333E-4
+2013-05-20 21:40:54,894 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TBT: 5.833333333333334E-4
+2013-05-20 21:40:54,916 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TLT: 3.6666666666666667E-4
+2013-05-20 21:40:54,932 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TNA: 2.666666666666667E-4
+2013-05-20 21:40:55,002 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TZA: 0.0011666666666666668
+2013-05-20 21:40:55,014 [pool-2-thread-1] DEBUG  CurrentICDataLoad - USO: 2.0E-4
+2013-05-20 21:40:55,027 [pool-2-thread-1] DEBUG  CurrentICDataLoad - UNG: 2.1666666666666666E-4
+2013-05-20 21:40:55,061 [pool-2-thread-1] DEBUG  CurrentICDataLoad - VXX: 5.666666666666667E-4
+2013-05-20 21:40:55,077 [pool-2-thread-1] DEBUG  CurrentICDataLoad - XLB: 2.666666666666667E-4
+2013-05-20 21:40:55,090 [pool-2-thread-1] DEBUG  CurrentICDataLoad - XLE: 2.1666666666666666E-4
+2013-05-20 21:40:55,105 [pool-2-thread-1] DEBUG  CurrentICDataLoad - XLF: 2.5E-4
+2013-05-20 21:40:55,123 [pool-2-thread-1] DEBUG  CurrentICDataLoad - XME: 2.8333333333333335E-4
+2013-05-20 21:40:55,134 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AA: 1.8333333333333334E-4
+2013-05-20 21:40:55,150 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AAPL: 2.666666666666667E-4
+2013-05-20 21:40:55,152 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AAPL7: 3.3333333333333335E-5
+2013-05-20 21:40:55,188 [pool-2-thread-1] DEBUG  CurrentICDataLoad - ABX: 6.0E-4
+2013-05-20 21:40:55,199 [pool-2-thread-1] DEBUG  CurrentICDataLoad - ACN: 1.8333333333333334E-4
+2013-05-20 21:40:55,207 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AET: 1.3333333333333334E-4
+2013-05-20 21:40:55,215 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AIG: 1.1666666666666667E-4
+2013-05-20 21:40:55,227 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AMRN: 2.0E-4
+2013-05-20 21:40:55,238 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AMZN: 1.8333333333333334E-4
+2013-05-20 21:40:55,240 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AMZN7: 1.6666666666666667E-5
+2013-05-20 21:40:55,252 [pool-2-thread-1] DEBUG  CurrentICDataLoad - ANF: 2.0E-4
+2013-05-20 21:40:55,263 [pool-2-thread-1] DEBUG  CurrentICDataLoad - ANR: 1.6666666666666666E-4
+2013-05-20 21:40:55,276 [pool-2-thread-1] DEBUG  CurrentICDataLoad - APA: 2.1666666666666666E-4
+2013-05-20 21:40:55,294 [pool-2-thread-1] DEBUG  CurrentICDataLoad - APC: 2.8333333333333335E-4
+2013-05-20 21:40:55,331 [pool-2-thread-1] DEBUG  CurrentICDataLoad - APOL: 6.166666666666666E-4
+2013-05-20 21:40:55,343 [pool-2-thread-1] DEBUG  CurrentICDataLoad - ARNA: 1.8333333333333334E-4
+2013-05-20 21:40:55,371 [pool-2-thread-1] DEBUG  CurrentICDataLoad - AXP: 4.6666666666666666E-4
+2013-05-20 21:40:55,405 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BA: 5.666666666666667E-4
+2013-05-20 21:40:55,414 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BAC: 1.5E-4
+2013-05-20 21:40:55,423 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BAX: 1.5E-4
+2013-05-20 21:40:55,433 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BBRY: 1.6666666666666666E-4
+2013-05-20 21:40:55,445 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BBY: 2.0E-4
+2013-05-20 21:40:55,454 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BIDU: 1.5E-4
+2013-05-20 21:40:55,468 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BK: 2.3333333333333333E-4
+2013-05-20 21:40:55,480 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BMY: 1.6666666666666666E-4
+2013-05-20 21:40:55,490 [pool-2-thread-1] DEBUG  CurrentICDataLoad - BP: 1.6666666666666666E-4
+2013-05-20 21:40:55,500 [pool-2-thread-1] DEBUG  CurrentICDataLoad - C: 1.6666666666666666E-4
+2013-05-20 21:40:55,513 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CAT: 2.1666666666666666E-4
+2013-05-20 21:40:55,526 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CELG: 2.1666666666666666E-4
+2013-05-20 21:40:55,538 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CF: 1.8333333333333334E-4
+2013-05-20 21:40:55,547 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CHK: 1.5E-4
+2013-05-20 21:40:55,558 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CL: 1.8333333333333334E-4
+2013-05-20 21:40:55,567 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CLF: 1.5E-4
+2013-05-20 21:40:55,576 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CMG: 1.5E-4
+2013-05-20 21:40:55,584 [pool-2-thread-1] DEBUG  CurrentICDataLoad - COF: 1.3333333333333334E-4
+2013-05-20 21:40:55,594 [pool-2-thread-1] DEBUG  CurrentICDataLoad - COH: 1.5E-4
+2013-05-20 21:40:55,621 [pool-2-thread-1] DEBUG  CurrentICDataLoad - COP: 4.5E-4
+2013-05-20 21:40:55,630 [pool-2-thread-1] DEBUG  CurrentICDataLoad - COST: 1.3333333333333334E-4
+2013-05-20 21:40:55,656 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CSCO: 4.166666666666667E-4
+2013-05-20 21:40:55,683 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CREE: 4.5E-4
+2013-05-20 21:40:55,693 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CRM: 1.6666666666666666E-4
+2013-05-20 21:40:55,709 [pool-2-thread-1] DEBUG  CurrentICDataLoad - CVX: 2.666666666666667E-4
+2013-05-20 21:40:55,726 [pool-2-thread-1] DEBUG  CurrentICDataLoad - DDD: 2.8333333333333335E-4
+2013-05-20 21:40:55,743 [pool-2-thread-1] DEBUG  CurrentICDataLoad - DE: 2.8333333333333335E-4
+2013-05-20 21:40:55,754 [pool-2-thread-1] DEBUG  CurrentICDataLoad - DECK: 1.8333333333333334E-4
+2013-05-20 21:40:55,762 [pool-2-thread-1] DEBUG  CurrentICDataLoad - DELL: 1.3333333333333334E-4
+2013-05-20 21:40:55,771 [pool-2-thread-1] DEBUG  CurrentICDataLoad - DIS: 1.5E-4
+2013-05-20 21:40:55,773 [pool-2-thread-1] DEBUG  CurrentICDataLoad - DNDN: 3.3333333333333335E-5
+2013-05-20 21:40:55,781 [pool-2-thread-1] DEBUG  CurrentICDataLoad - DOW: 1.3333333333333334E-4
+2013-05-20 21:40:55,790 [pool-2-thread-1] DEBUG  CurrentICDataLoad - EBAY: 1.3333333333333334E-4
+2013-05-20 21:40:55,799 [pool-2-thread-1] DEBUG  CurrentICDataLoad - EMC: 1.3333333333333334E-4
+2013-05-20 21:40:55,808 [pool-2-thread-1] DEBUG  CurrentICDataLoad - F: 1.5E-4
+2013-05-20 21:40:55,817 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FB: 1.5E-4
+2013-05-20 21:40:55,826 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FCX: 1.5E-4
+2013-05-20 21:40:55,836 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FDX: 1.5E-4
+2013-05-20 21:40:55,847 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FFIV: 1.8333333333333334E-4
+2013-05-20 21:40:55,858 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FMCN: 1.8333333333333334E-4
+2013-05-20 21:40:55,867 [pool-2-thread-1] DEBUG  CurrentICDataLoad - FSLR: 1.5E-4
+2013-05-20 21:40:55,877 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GE: 1.6666666666666666E-4
+2013-05-20 21:40:55,887 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GG: 1.6666666666666666E-4
+2013-05-20 21:40:55,896 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GILD: 1.5E-4
+2013-05-20 21:40:55,905 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GM: 1.5E-4
+2013-05-20 21:40:55,914 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GMCR: 1.5E-4
+2013-05-20 21:40:55,924 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GME: 1.6666666666666666E-4
+2013-05-20 21:40:55,938 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GOOG: 2.3333333333333333E-4
+2013-05-20 21:40:55,940 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GOOG7: 3.3333333333333335E-5
+2013-05-20 21:40:55,954 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GPS: 2.1666666666666666E-4
+2013-05-20 21:40:56,167 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GRPN: 0.00355
+2013-05-20 21:40:56,175 [pool-2-thread-1] DEBUG  CurrentICDataLoad - GS: 1.3333333333333334E-4
+2013-05-20 21:40:56,184 [pool-2-thread-1] DEBUG  CurrentICDataLoad - HAL: 1.5E-4
+2013-05-20 21:40:56,192 [pool-2-thread-1] DEBUG  CurrentICDataLoad - HD: 1.3333333333333334E-4
+2013-05-20 21:40:56,200 [pool-2-thread-1] DEBUG  CurrentICDataLoad - HES: 1.3333333333333334E-4
+2013-05-20 21:40:56,209 [pool-2-thread-1] DEBUG  CurrentICDataLoad - HLF: 1.5E-4
+2013-05-20 21:40:56,217 [pool-2-thread-1] DEBUG  CurrentICDataLoad - HON: 1.3333333333333334E-4
+2013-05-20 21:40:56,239 [pool-2-thread-1] DEBUG  CurrentICDataLoad - HPQ: 3.6666666666666667E-4
+2013-05-20 21:40:56,247 [pool-2-thread-1] DEBUG  CurrentICDataLoad - IBM: 1.3333333333333334E-4
+2013-05-20 21:40:56,256 [pool-2-thread-1] DEBUG  CurrentICDataLoad - INTC: 1.3333333333333334E-4
+2013-05-20 21:40:56,264 [pool-2-thread-1] DEBUG  CurrentICDataLoad - IOC: 1.3333333333333334E-4
+2013-05-20 21:40:56,283 [pool-2-thread-1] DEBUG  CurrentICDataLoad - IP: 3.1666666666666665E-4
+2013-05-20 21:40:56,292 [pool-2-thread-1] DEBUG  CurrentICDataLoad - ISRG: 1.5E-4
+2013-05-20 21:40:56,300 [pool-2-thread-1] DEBUG  CurrentICDataLoad - JCP: 1.3333333333333334E-4
+2013-05-20 21:40:56,308 [pool-2-thread-1] DEBUG  CurrentICDataLoad - JNJ: 1.3333333333333334E-4
+2013-05-20 21:40:56,317 [pool-2-thread-1] DEBUG  CurrentICDataLoad - JOY: 1.3333333333333334E-4
+2013-05-20 21:40:56,325 [pool-2-thread-1] DEBUG  CurrentICDataLoad - JPM: 1.1666666666666667E-4
+2013-05-20 21:40:56,333 [pool-2-thread-1] DEBUG  CurrentICDataLoad - KO: 1.1666666666666667E-4
+2013-05-20 21:40:56,341 [pool-2-thread-1] DEBUG  CurrentICDataLoad - KORS: 1.3333333333333334E-4
+2013-05-20 21:40:56,349 [pool-2-thread-1] DEBUG  CurrentICDataLoad - LLY: 1.3333333333333334E-4
+2013-05-20 21:40:56,357 [pool-2-thread-1] DEBUG  CurrentICDataLoad - LNKD: 1.3333333333333334E-4
+2013-05-20 21:40:56,366 [pool-2-thread-1] DEBUG  CurrentICDataLoad - LOW: 1.5E-4
+2013-05-20 21:40:56,375 [pool-2-thread-1] DEBUG  CurrentICDataLoad - LULU: 1.5E-4
+2013-05-20 21:40:56,383 [pool-2-thread-1] DEBUG  CurrentICDataLoad - LVS: 1.3333333333333334E-4
+2013-05-20 21:40:56,393 [pool-2-thread-1] DEBUG  CurrentICDataLoad - M: 1.6666666666666666E-4
+2013-05-20 21:40:56,402 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MA: 1.5E-4
+2013-05-20 21:40:56,410 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MCD: 1.3333333333333334E-4
+2013-05-20 21:40:56,419 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MCO: 1.5E-4
+2013-05-20 21:40:56,430 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MCP: 1.6666666666666666E-4
+2013-05-20 21:40:56,438 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MDLZ: 1.3333333333333334E-4
+2013-05-20 21:40:56,447 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MET: 1.5E-4
+2013-05-20 21:40:56,457 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MGM: 1.6666666666666666E-4
+2013-05-20 21:40:56,458 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MHP: 1.6666666666666667E-5
+2013-05-20 21:40:56,467 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MMM: 1.5E-4
+2013-05-20 21:40:56,476 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MON: 1.5E-4
+2013-05-20 21:40:56,484 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MOS: 1.3333333333333334E-4
+2013-05-20 21:40:56,493 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MPEL: 1.5E-4
+2013-05-20 21:40:56,501 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MRK: 1.3333333333333334E-4
+2013-05-20 21:40:56,510 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MRVL: 1.5E-4
+2013-05-20 21:40:56,518 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MS: 1.3333333333333334E-4
+2013-05-20 21:40:56,527 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MSFT: 1.5E-4
+2013-05-20 21:40:56,535 [pool-2-thread-1] DEBUG  CurrentICDataLoad - MU: 1.3333333333333334E-4
+2013-05-20 21:40:56,543 [pool-2-thread-1] DEBUG  CurrentICDataLoad - NAV: 1.3333333333333334E-4
+2013-05-20 21:40:56,552 [pool-2-thread-1] DEBUG  CurrentICDataLoad - NEM: 1.5E-4
+2013-05-20 21:40:56,560 [pool-2-thread-1] DEBUG  CurrentICDataLoad - NFLX: 1.3333333333333334E-4
+2013-05-20 21:40:56,567 [pool-2-thread-1] DEBUG  CurrentICDataLoad - NKE: 1.1666666666666667E-4
+2013-05-20 21:40:56,570 [pool-2-thread-1] DEBUG  CurrentICDataLoad - NOK: 5.0E-5
+2013-05-20 21:40:56,580 [pool-2-thread-1] DEBUG  CurrentICDataLoad - NTAP: 1.6666666666666666E-4
+2013-05-20 21:40:56,593 [pool-2-thread-1] DEBUG  CurrentICDataLoad - NVDA: 2.0E-4
+2013-05-20 21:40:56,601 [pool-2-thread-1] DEBUG  CurrentICDataLoad - ORCL: 1.3333333333333334E-4
+2013-05-20 21:40:56,609 [pool-2-thread-1] DEBUG  CurrentICDataLoad - OXY: 1.3333333333333334E-4
+2013-05-20 21:40:56,632 [pool-2-thread-1] DEBUG  CurrentICDataLoad - PBR: 3.8333333333333334E-4
+2013-05-20 21:40:56,644 [pool-2-thread-1] DEBUG  CurrentICDataLoad - PCLN: 2.0E-4
+2013-05-20 21:40:56,654 [pool-2-thread-1] DEBUG  CurrentICDataLoad - PFE: 1.6666666666666666E-4
+2013-05-20 21:40:56,662 [pool-2-thread-1] DEBUG  CurrentICDataLoad - PG: 1.3333333333333334E-4
+2013-05-20 21:40:56,671 [pool-2-thread-1] DEBUG  CurrentICDataLoad - PM: 1.5E-4
+2013-05-20 21:40:56,680 [pool-2-thread-1] DEBUG  CurrentICDataLoad - POT: 1.5E-4
+2013-05-20 21:40:56,692 [pool-2-thread-1] DEBUG  CurrentICDataLoad - PSX: 2.0E-4
+2013-05-20 21:40:56,701 [pool-2-thread-1] DEBUG  CurrentICDataLoad - QCOM: 1.5E-4
+2013-05-20 21:40:56,710 [pool-2-thread-1] DEBUG  CurrentICDataLoad - QCOR: 1.5E-4
+2013-05-20 21:40:56,718 [pool-2-thread-1] DEBUG  CurrentICDataLoad - S: 1.3333333333333334E-4
+2013-05-20 21:40:56,725 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SBUX: 1.1666666666666667E-4
+2013-05-20 21:40:56,734 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SINA: 1.5E-4
+2013-05-20 21:40:56,742 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SLB: 1.3333333333333334E-4
+2013-05-20 21:40:56,752 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SLW: 1.6666666666666666E-4
+2013-05-20 21:40:56,761 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SNDK: 1.1666666666666667E-4
+2013-05-20 21:40:56,768 [pool-2-thread-1] DEBUG  CurrentICDataLoad - STX: 1.1666666666666667E-4
+2013-05-20 21:40:56,776 [pool-2-thread-1] DEBUG  CurrentICDataLoad - SU: 1.3333333333333334E-4
+2013-05-20 21:40:56,784 [pool-2-thread-1] DEBUG  CurrentICDataLoad - T: 1.3333333333333334E-4
+2013-05-20 21:40:56,792 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TGT: 1.3333333333333334E-4
+2013-05-20 21:40:56,800 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TIF: 1.3333333333333334E-4
+2013-05-20 21:40:56,808 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TSLA: 1.3333333333333334E-4
+2013-05-20 21:40:56,817 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TSO: 1.5E-4
+2013-05-20 21:40:56,830 [pool-2-thread-1] DEBUG  CurrentICDataLoad - TXN: 2.1666666666666666E-4
+2013-05-20 21:40:56,845 [pool-2-thread-1] DEBUG  CurrentICDataLoad - UA: 2.5E-4
+2013-05-20 21:40:56,867 [pool-2-thread-1] DEBUG  CurrentICDataLoad - UNH: 3.6666666666666667E-4
+2013-05-20 21:40:56,882 [pool-2-thread-1] DEBUG  CurrentICDataLoad - UNP: 2.3333333333333333E-4
+2013-05-20 21:40:56,890 [pool-2-thread-1] DEBUG  CurrentICDataLoad - UNXL: 1.3333333333333334E-4
+2013-05-20 21:40:56,897 [pool-2-thread-1] DEBUG  CurrentICDataLoad - UPS: 1.1666666666666667E-4
+2013-05-20 21:40:56,905 [pool-2-thread-1] DEBUG  CurrentICDataLoad - UTX: 1.3333333333333334E-4
+2013-05-20 21:40:56,922 [pool-2-thread-1] DEBUG  CurrentICDataLoad - V: 2.8333333333333335E-4
+2013-05-20 21:40:56,929 [pool-2-thread-1] DEBUG  CurrentICDataLoad - VALE: 1.1666666666666667E-4
+2013-05-20 21:40:56,936 [pool-2-thread-1] DEBUG  CurrentICDataLoad - VHC: 1.1666666666666667E-4
+2013-05-20 21:40:56,943 [pool-2-thread-1] DEBUG  CurrentICDataLoad - VLO: 1.1666666666666667E-4
+2013-05-20 21:40:56,950 [pool-2-thread-1] DEBUG  CurrentICDataLoad - VMW: 1.1666666666666667E-4
+2013-05-20 21:40:56,962 [pool-2-thread-1] DEBUG  CurrentICDataLoad - VOD: 1.8333333333333334E-4
+2013-05-20 21:40:56,968 [pool-2-thread-1] DEBUG  CurrentICDataLoad - VZ: 1.0E-4
+2013-05-20 21:40:56,975 [pool-2-thread-1] DEBUG  CurrentICDataLoad - WAG: 1.1666666666666667E-4
+2013-05-20 21:40:56,984 [pool-2-thread-1] DEBUG  CurrentICDataLoad - WFC: 1.3333333333333334E-4
+2013-05-20 21:40:56,990 [pool-2-thread-1] DEBUG  CurrentICDataLoad - WFM: 1.0E-4
+2013-05-20 21:40:56,997 [pool-2-thread-1] DEBUG  CurrentICDataLoad - WLT: 1.1666666666666667E-4
+2013-05-20 21:40:57,004 [pool-2-thread-1] DEBUG  CurrentICDataLoad - WMB: 1.1666666666666667E-4
+2013-05-20 21:40:57,050 [pool-2-thread-1] DEBUG  CurrentICDataLoad - WMT: 7.666666666666667E-4
+2013-05-20 21:40:57,100 [pool-2-thread-1] DEBUG  CurrentICDataLoad - WYNN: 8.333333333333334E-4
+2013-05-20 21:40:57,117 [pool-2-thread-1] DEBUG  CurrentICDataLoad - X: 2.8333333333333335E-4
+2013-05-20 21:40:57,133 [pool-2-thread-1] DEBUG  CurrentICDataLoad - XOM: 2.666666666666667E-4
+2013-05-20 21:40:57,144 [pool-2-thread-1] DEBUG  CurrentICDataLoad - YHOO: 1.8333333333333334E-4
+2013-05-20 21:40:57,151 [pool-2-thread-1] DEBUG  CurrentICDataLoad - YUM: 1.1666666666666667E-4
+2013-05-20 21:40:57,154 [pool-2-thread-1] DEBUG  CurrentICDataLoad - ZNGA: 3.3333333333333335E-5
+2013-05-20 21:40:57,160 [pool-1-thread-1] TRACE  PrepareCurrentIC - Complete: 0.09601666666666667
+2013-05-20 21:40:57,214 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'currentCreditRanking'
+2013-05-20 21:40:57,214 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'currentCreditDataLoad'
+2013-05-20 21:40:57,214 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'currentCreditHelperBean'
+2013-05-20 21:40:57,215 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'currentCreditHelperBean'
+2013-05-20 21:40:57,215 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Getting BeanInfo for class [code.com.corybill.control.dataLoad.CurrentICCreditRankingDataLoad]
+2013-05-20 21:40:57,219 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Caching PropertyDescriptors for class [code.com.corybill.control.dataLoad.CurrentICCreditRankingDataLoad]
+2013-05-20 21:40:57,219 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'class' of type [java.lang.Class]
+2013-05-20 21:40:57,219 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'dlHelper' of type [code.com.corybill.helper.ICCurrentCreditRankingHelper]
+2013-05-20 21:40:57,219 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'expirations' of type [java.util.List]
+2013-05-20 21:40:57,219 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'icCurrentDao' of type [code.com.corybill.control.mongoDao.IronCondorCurrentDao]
+2013-05-20 21:40:57,219 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'mathUtil' of type [code.com.corybill.control.math.MathUtil]
+2013-05-20 21:40:57,219 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'icCurrentDaoBean'
+2013-05-20 21:40:57,219 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'icCurrentDaoBean'
+2013-05-20 21:40:57,219 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'mathUtilBean'
+2013-05-20 21:40:57,219 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Creating instance of bean 'myStandardDeviationBean'
+2013-05-20 21:40:57,219 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'myStandardDeviationBean'
+2013-05-20 21:40:57,220 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'mathUtilBean'
+2013-05-20 21:40:57,220 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'currentCreditDataLoad'
+2013-05-20 21:40:57,220 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Getting BeanInfo for class [code.com.corybill.PrepareCurrentICCreditRanking]
+2013-05-20 21:40:57,225 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Caching PropertyDescriptors for class [code.com.corybill.PrepareCurrentICCreditRanking]
+2013-05-20 21:40:57,225 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'class' of type [java.lang.Class]
+2013-05-20 21:40:57,225 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'dataLoad' of type [code.com.corybill.control.dataLoad.CurrentICCreditRankingDataLoad]
+2013-05-20 21:40:57,225 [pool-1-thread-1] TRACE  CachedIntrospectionResults - Found bean property 'instance' of type [code.com.corybill.PrepareBase]
+2013-05-20 21:40:57,225 [pool-1-thread-1] DEBUG  DefaultListableBeanFactory - Finished creating instance of bean 'currentCreditRanking'
+2013-05-20 21:40:59,271 [pool-3-thread-1] DEBUG  CurrentICCreditRankingDataLoad - 0.034083333333333334
+2013-05-20 21:40:59,340 [pool-1-thread-1] TRACE  PrepareCurrentICCreditRanking - Complete: 0.036333333333333336
+2013-05-20 21:40:59,340 [main] TRACE  PrepareEntireHistory - Complete: 0.13241666666666665

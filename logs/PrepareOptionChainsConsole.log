@@ -1,0 +1,10 @@
+log4j:ERROR Could not find value for key log4j.appender.ResearchA
+log4j:ERROR Could not instantiate appender named "ResearchA".
+log4j:ERROR Could not find value for key log4j.appender.ResearchA
+log4j:ERROR Could not instantiate appender named "ResearchA".
+2013-02-17 15:48:07,408 [main] INFO   ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e3b6297: startup date [Sun Feb 17 15:48:07 EST 2013]; root of context hierarchy
+2013-02-17 15:48:07,710 [main] INFO   XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [resources/applicationContext.xml]
+2013-02-17 15:48:08,305 [main] INFO   DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@85379bc: defining beans [base,singleQuote,ironCondors,vanillaOptions,quoteVolatility,quoteVolRanking,profitLossRanking,creditRanking,study,icProfitLossStudy,cboeBean,dataLoad,dataLoad,dataLoad,profitAndLossBean,ironCondorBean,volatilityBean,volRankingBean,singleQuoteBean,vanillaBean,optionsHelperBean,condorHelperBean,icStudyHelperBean,profitLossHelperBean,creditHelperBean,volRankingHelperBean,calendarHelperBean,myStandardDeviationBean,mathUtilBean,updateDateDaoBean,vanillaOptionsDaoBean,ironCondorDaoBean,quoteDaoBean]; root of factory hierarchy
+Feb 17, 2013 3:48:09 PM com.google.code.morphia.logging.MorphiaLoggerFactory chooseLoggerFactory
+INFO: LoggerImplFactory set to com.google.code.morphia.logging.jdk.JDKLoggerFactory
+2013-02-15_1.0_5_0
