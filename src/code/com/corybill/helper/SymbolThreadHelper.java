@@ -17,6 +17,13 @@ import java.util.concurrent.ExecutorService;
  */
 public class SymbolThreadHelper {
 
+    /**
+     * Divides the work up evenly given the number of threads and the amount of work that needs to be done.
+     *
+     * @param base
+     * @param es
+     * @param numThreads
+     */
     public static void prepareStarterThreads(PrepareBase<? extends PrepareBase> base, ExecutorService es, int numThreads ){
         ApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[] {"resources/applicationContext.xml"});
